@@ -10,22 +10,20 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     var move = 0
     val buttonsArray : ArrayList<Button> = ArrayList()
-    lateinit var resetButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        resetButton = findViewById(R.id.resetButton)
 
-        buttonsArray.add(findViewById(R.id.button0))
-        buttonsArray.add(findViewById(R.id.button1))
-        buttonsArray.add(findViewById(R.id.button2))
-        buttonsArray.add(findViewById(R.id.button3))
-        buttonsArray.add(findViewById(R.id.button4))
-        buttonsArray.add(findViewById(R.id.button5))
-        buttonsArray.add(findViewById(R.id.button6))
-        buttonsArray.add(findViewById(R.id.button7))
-        buttonsArray.add(findViewById(R.id.button8))
+        buttonsArray.add(button0)
+        buttonsArray.add(button1)
+        buttonsArray.add(button2)
+        buttonsArray.add(button3)
+        buttonsArray.add(button4)
+        buttonsArray.add(button5)
+        buttonsArray.add(button6)
+        buttonsArray.add(button7)
+        buttonsArray.add(button8)
 
         for (btn in buttonsArray) {
             btn.setOnClickListener(this)
